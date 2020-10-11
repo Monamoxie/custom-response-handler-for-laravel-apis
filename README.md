@@ -59,13 +59,13 @@ The same error messages that you've always seen from laravel whenever an excepti
 If it's a custom error, (one you raised yourself), in your controller for example, you can also follow this approach. You can create a method in your base controller and let it be responsible for returning JSON responses using this format. 
 
 #### A 422 error will now be something like this
-![Snapshot 3](snapshots/trait_new 422_error_format.png)
+![Snapshot 3](snapshots/trait_new_422_error_format.png)
 
 #### A 403 error will be something like this
-![Snapshot 4](snapshots/trait_new 403_error_format.png)
+![Snapshot 4](snapshots/trait_new_403_error_format.png)
 
 #### A 500 error will be something like this
-![Snapshot 4](snapshots/trait_new 500_error_format.png)
+![Snapshot 4](snapshots/trait_new_500_error_format.png)
 
 ### THE PURPOSE
 Uniformity. My Front End app can always be sure of getting a response with these keys and properties. So no matter the use case, it checks the status and automatically displays errors if the contents of the errors key is not empty. 
