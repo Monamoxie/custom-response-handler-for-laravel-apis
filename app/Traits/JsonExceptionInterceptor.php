@@ -34,10 +34,10 @@ trait JsonExceptionInterceptor
         else {
             $format['message'] = $this->convertExceptionToArray($e)['message'];
             $format['errors'] = method_exists($e, 'errors') ? $e->errors() : []; 
-            // The following keys can be removed. Only necessary for debug purposes in the case of a rasie exception
+
+            // The following keys can be removed. Only necessary for debug purposes in the case of an exception
             // But not something you would want your API users or consumers to see or use
-            // Preferably, you can place them under a conditional statement to check if debug option in .env is true and 
-            // only display if debug mode is on 
+            // Preferably, you can place them under a conditional statement to check if debug option in .env is true 
             
             if(config('app.debug')) {
                 $format['exception'] = get_class($e);
