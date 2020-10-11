@@ -74,7 +74,7 @@ Uniformity. My Front End app can always be sure of getting a response with these
 If you wish to see the file, line and trace of the exception as shown by Laravel, mainly for debugging, make sure to turn debug on in your env file and they should also included in the response.
 
 ### SUPPORT 
-Laravel ^5.6.* >= 8.*.*
+Laravel ^5.x >= 8.x
 
 
 ### LICENSE
