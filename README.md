@@ -16,12 +16,12 @@ In the case of a 404 error, the error display is quite different. An object is r
 
 It's almost similar with a 500 server error and others. But in a 401 unauthorized exception, you get an object with a message key and a property that reads "unauthenticated".
 
-For most use cases, this is okay but I just wasn't cool with it. I know the normal thing to do in your front end apps is to simply check for the status codes for each request and handle appropriately, but I just didn't want it that way. 
+For most use cases, this should be okay but I wasn't cool with it. I know the normal thing to do in your front end apps is to simply check for the status codes for each request and handle appropriately, but I just didn't want it that way. 
 
 I wanted a pattern, uniformity. I wanted an object that contains the same keys no matter the error or success type.
 
 ### MY LITTLE FIX
-The Use of a Custom Trait to intercept whatever error was being handled, reformat them and to the front end with the style and pattern I want.
+The Use of a Custom Trait to intercept whatever error was being handled, reformat them and send to the front end with the style and pattern I want.
 
 ### HOW TO USE
 1. Clone the repo
